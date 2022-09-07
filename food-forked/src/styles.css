@@ -1,0 +1,137 @@
+:root {
+  --body-color: #f1f5f9;
+}
+
+body {
+  text-align: center;
+  background-color: var(--body-color);
+  font-family: sans-serif;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.hero-img {
+  max-width: 100px;
+}
+.hero-heading {
+  margin-left: 1rem;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+.list-of-state {
+  padding: 1rem 2rem;
+  margin: auto;
+}
+.state-food-details {
+  padding: 1rem;
+}
+.state-food-details ul {
+  list-style-type: none;
+  width: 70%;
+  margin: auto;
+}
+
+.state-food-details li {
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: 2rem;
+  margin: 1.5rem auto;
+}
+.list-of-state button {
+  margin: 0rem 1rem;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.list-of-state button:hover {
+  border-radius: 1rem;
+  background-color: #cbd5e1;
+}
+.food-img img {
+  max-width: 300px;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 620px) and (min-width: 420px) {
+  .food-img img {
+    max-width: 200px;
+    border-radius: 2rem;
+  }
+  .state-food-details ul {
+    list-style-type: none;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 620px) and (min-width: 465px) {
+  .list-of-state button {
+    margin: 0rem 1rem;
+  }
+  .list-of-state {
+    padding: 2rem 0rem;
+    margin: auto;
+  }
+  .state-food-details ul {
+    list-style-type: none;
+    width: 70%;
+    margin: 0rem;
+  }
+}
+@media screen and (max-width: 465px) and (min-width: 401px) {
+  .list-of-state {
+    text-align: center;
+    padding: 2rem 0rem;
+    margin: 0rem;
+  }
+  .list-of-state button {
+    margin: 0.5rem auto;
+    display: block;
+  }
+  .state-food-details ul {
+    list-style-type: none;
+    width: 70%;
+    margin: 0rem;
+  }
+
+  .state-food-details li {
+    padding: 1rem;
+  }
+  .food-img img {
+    max-width: 200px;
+    border-radius: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .list-of-state {
+    text-align: center;
+    padding: 2rem 0rem;
+    margin: 0rem;
+  }
+  .list-of-state button {
+    margin: 0.5rem auto;
+    display: block;
+  }
+  .state-food-details ul {
+    list-style-type: none;
+    width: 70%;
+    margin: 0rem;
+  }
+
+  .state-food-details li {
+    padding: 1rem;
+  }
+  .food-img img {
+    max-width: 140px;
+    border-radius: 2rem;
+  }
+}
